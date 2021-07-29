@@ -88,9 +88,9 @@ function converterPeso(){
     if(inputTipoValor === "tonelada" && resultadoTipoValor === "tonelada"){
         resultadoP.value = inputP.value;
     }else if(inputTipoValor === "tonelada" && resultadoTipoValor === "grama"){
-        resultadoP.value = Number(inputP.value) * 0.000001;
+        resultadoP.value = Number(inputP.value) * 1000000;
     }else if(inputTipoValor === "tonelada" && resultadoTipoValor === "quilograma"){
-        resultadoP.value = Number(inputP.value) *  0.001;
+        resultadoP.value = Number(inputP.value) *  1000;
     }
 
 }
