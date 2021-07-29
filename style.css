@@ -1,0 +1,169 @@
+
+/*==================== GOOGLE FONTS ====================*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,400;0,700;1,300&display=swap');
+
+:root{
+    --tamanho-cor: #504EBE;
+    --peso-cor: #BE4E4E;
+    --litro-cor: #50BE4E;
+    --amarelo-base:#FFC738;
+    --amarelo-unselected: #ffe4a0;
+    --fonte: 'Roboto Condensed', sans-serif;
+    --cor: var(--tamanho-cor);
+}
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body,
+ul,
+li,
+p{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.tamanho{
+    color: var(--tamanho-cor);
+}
+
+.peso{
+    color: var(--peso-cor);
+}
+
+.litros{
+    color: var(--litro-cor);
+}
+
+body{
+    font-family: var(--fonte);
+}
+
+.bg__tamanho{
+    background-color: var(--tamanho-cor);
+}
+
+.bg__peso{
+    background-color: var(--peso-cor);
+}
+
+.bg__litro{
+    background-color: var(--litro-cor);
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.grid{
+    display: initial;
+}
+
+.pasta{
+    background-color: var(--amarelo-base);
+    height: 15rem;
+    width: 20rem;
+    border-radius: 0 .2rem .2rem .2rem;
+    text-align: center;
+    display: block;
+    box-shadow: 3px 3px 7px #3a3a3a;
+}
+
+
+.menu{
+    display: flex;
+}
+
+li{
+    padding: .2rem;
+    border-radius: .2rem .2rem 0 0;
+    margin-right: .5rem;
+    font-size: 1rem;
+    width: 4.5rem;
+    text-align: center;
+    cursor: pointer;
+}
+
+.menu__a{
+    background-color: var(--amarelo-base);
+}
+
+.menu__b{
+    background-color: var(--amarelo-unselected);
+}
+
+.titulo{
+    font-size: 2rem;
+    color: #FFF;
+    display: block;
+    padding-top: 2rem;
+}
+.visivel{
+    visibility: visible;
+}
+
+.red{
+    color: red;
+    background-color: purple;
+}
+
+.escondido{
+    visibility: hidden;
+    position: absolute;
+}
+
+.pasta__container{
+    display: flex;
+    justify-content: center;
+}
+
+.input{
+    margin: 1rem;
+}
+
+.igual{
+    font-size: 2rem;
+    margin: 1rem 0 0 0;
+}
+
+input{
+    width: 7rem;
+    border: none;
+    text-align: center;
+}
+
+.pasta__medida{
+    font-family: var(--fonte);
+    color: #FFF;
+    width: 7rem;
+    border: none;
+    display: flex;
+}
+
+p{
+    font-size: 1.5rem;
+    color: #FFF;
+}
+
+.titulo__rodape{
+    font-size: 1.5rem;
+    color: #FFF;
+    font-style: italic;
+}
+

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>conversor</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!--==================== UNICONS ====================-->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+</head>
+<body class="bg__tamanho">
+    <div class="container">
+        <div class="grid">
+            <nav>
+                <ul class="menu">
+                    <li class="menu__a" id="tamanho">
+                        <a class="tamanho" href="#">COMP.</a>
+                    </li>
+                    <li class="menu__b"  id="peso">
+                        <a class="peso" href="#">MASA</a>
+                    </li>
+                    <li class="menu__b"  id="litro">
+                        <a class="litros" href="#">VOLUME</a>
+                    </li>
+                </ul>
+            </nav>
+            
+            <div class="pasta">
+
+                <span class="titulo visivel" id="titulo__t">COMPRIMENTO</span>
+                <span class="titulo escondido" id="titulo__p">MASSA</span>
+                <span class="titulo escondido" id="titulo__l">VOLUME</span>
+                
+                <!---------------------------- comprimento ---------------------------->
+                
+                <div class="pasta__container visivel" id="container__t">
+                    <div class="input">
+                        <input type="text" id="input">
+                        <select class="pasta__medida bg__tamanho" id="input__tipo">
+                            <option value="centimetro">centimetro</option>
+                            <option value="metro">metro</option>
+                            <option value="kilometro">kilometro</option>
+                        </select>
+
+                    </div>
+
+
+                    <p class="igual tamanho">=</p>
+
+
+                    <div class="input">
+                        <input type="text" id="resultado">
+                        <select class="pasta__medida bg__tamanho" id="resultado__tipo">
+                            <option value="metro">metro</option>
+                            <option value="centimetro">centimetro</option>
+                            <option value="kilometro">kilometro</option>
+                        </select>
+                    </div>
+                </div>  
+
+                <!---------------------------- massa ---------------------------->
+
+                <div class="pasta__container escondido" id="container__p">
+                    <div class="input">
+                        <input type="text" id="input__p">
+
+                        <select class="pasta__medida bg__peso" id="input__lista__p">
+                            <option value="grama">grama</option>
+                            <option value="quilograma">quilograma</option>
+                            <option value="tonelada">tonelada</option>
+                        </select>
+
+                    </div>
+
+                    <p class="igual peso">=</p>
+
+                    <div class="input">
+                        <input type="text" id="resultado__p">
+                        <select class="pasta__medida  bg__peso" id="resultado__lista__p">
+                            <option value="grama">grama</option>
+                            <option value="quilograma">quilograma</option>
+                            <option value="tonelada">tonelada</option>
+                        </select>
+                    </div>
+                </div>  
+                
+                <!---------------------------- volume ---------------------------->
+
+                <div class="pasta__container escondido" id="container__l">
+                    <div class="input">
+                        <input type="text" id="input__l">
+                        <select class="pasta__medida bg__litro" id="input__lista__l">
+                            <option value="mililitro">mililitro</option>
+                            <option value="litro">litro</option>
+                            <option value="metrocubico">metro cúbico</option>
+                        </select>
+
+                    </div>
+
+                    <p class="igual litros">=</p>
+
+                    <div class="input">
+                        <input type="text" id="resultado__l">
+                        <select class="pasta__medida  bg__litro" id="resultado__lista__l">
+                            <option value="mililitro">mililitro</option>
+                            <option value="litro">litro</option>
+                            <option value="metrocubico">metro cúbico</option>
+                        </select>
+                    </div>
+                </div>
+                
+            </div>
+
+            <span class="titulo__rodape">Conversor</span>
+        </div>
+    </div>
+
+
+    <!--==================== JAVASCRIPT ====================-->
+    <script src="main.js"></script>
+    <script src="mudaestilo.js"></script>
+</body>
+</html>
